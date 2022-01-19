@@ -1,0 +1,21 @@
+en:
+  routes:
+    # Controller routes
+    passwords: passwords
+    new: new
+    active: active
+    expired: expired
+    preview: preview
+    audit: audit
+    pages: pages
+
+    # Devise routes
+    users: users
+    sign_in: sign_in
+    sign_out: sign_out
+    sign_up: sign_up
+    password: password
+    edit: edit
+    confirmation: confirmation
+    unlock: unlock
+    cancel: cancel

@@ -1,0 +1,12 @@
+<% if ENV.key?('GA_ENABLE') %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= ENV['GA_ACCOUNT'] %>"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<%= ENV['GA_ACCOUNT'] %>');
+  </script>
+  <meta name="ga_enabled" content="true">
+<% end %>
